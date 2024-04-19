@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antibiotics</title>
+    <link rel="stylesheet" href="substyle.css">
+
+    <style>
+      /* Warning */
+      .warning {
+            background-color: #f44336;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+        body{
+            background-image: url("other_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+        }
+        /* Dark mode overlay */
+        body.dark-mode::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+      <div class="info-box">
+            <h1>Antibiotics - Which one should you buy?</h1>
+        </div>
+       
+        <div class="description">
+          <h2><p>Basic Information about Antibiotics</p></h2>
+            <ul>
+                <li>Antibiotics work by killing bacteria and preventing them from multiplying. </li>
+                <li>Common antibiotics include gentamicin, cephalexin, ertapenem, erythromycin, ciprofloxacin, and metronidazole.</li>
+                <li>They include a range of powerful drugs used to treat diseases caused by bacteria.</li>
+                <li>Antibiotics cannot treat viral infections, such as cold, flu, and most coughs.</li>
+                <li>This article explains what antibiotics are, how they work, potential side effects, and antibiotic resistance.</li>
+            </ul>
+        </div>
+
+        <ol class="medicines">
+            <li class="medicine">
+                <h2>Azithromycin</h2>
+                <img src="azithromycin.jpg" alt="azithromycin" height="200" width="200">
+
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>Azithromycin is used to treat certain bacterial infections, 
+                            such as bronchitis; pneumonia; sexually transmitted diseases (STD); and infections 
+                            of the ears, lungs, sinuses, skin, throat, and reproductive organs. 
+                            Azithromycin also is used to treat or prevent disseminated 
+                            Mycobacterium avium complex (MAC) infection 
+                            [a type of lung infection that often affects people with human immunodeficiency 
+                            virus (HIV)]. Azithromycin is in a class of medications called macrolide antibiotics. 
+                            It works by stopping the growth of bacteria.
+                            Antibiotics such as azithromycin will not work for colds, flu, or other viral 
+                            infections. Using antibiotics when they are not needed increases your risk of 
+                            getting an infection later that resists antibiotic treatment.
+                        </p>
+                        <li><strong>Uses of Azithromycin</strong></li>
+                        <p>
+                            <ul>
+                                <li>Azithromycin is used to treat certain bacterial infections,</li>
+                                <li>It works by stopping the growth of bacteria.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Azithromycin</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Azithromycin</li>
+                            <ol>
+                                <li>fast, pounding, or irregular heartbeat</li>
+                                <li>dizziness</li>
+                                <li>fainting</li>
+                                <li>rash with or without a fever</li>
+                                <li>itching</li>
+                                <li>extreme tiredness
+                                <li>unusual bleeding or bruising</li>
+                                <li>lack of energy</li>
+                                <li>loss of appetite</li>
+                                <li>pain in the upper right part of the stomach</li>
+                                <li>flu-like symptoms</li>
+                                <li>dark-colored urine</li>
+                                <li>unusual muscle weakness or difficulty with muscle control</li>
+                                <li>pink and swollen eyes </li>
+                             </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+
+            <li class="medicine">
+                <h2>Amoxicillin</h2>
+                <img src="amoxicillin.jpg" alt="amoxicillin" height="200" width="200">
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>Amoxicillin is only available on prescription. It comes as capsules or as a liquid that you swallow. It's also given by injection, but this is usually only done in hospital.</p>
+                        <li><strong>Uses of Amoxicillin</strong></li>
+                        <p>
+                            <ul>
+                                <li>Amoxicillin is a penicillin antibiotic. It is used to treat bacterial infections, such as chest infections (including pneumonia) and dental abscesses.</li>
+                                <li>It can also be used together with other antibiotics and medicines to treat stomach ulcers.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Amoxicillin</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Amoxicillin</li>
+                            <ol>
+                                <li>Dizziness</li>
+                                <li>drowsiness</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+        </ol>
+    </section>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+    <div class="warning">We are not responsible for any untoward side effects by consuming unprescribed medicine. Please consult your doctor before.</div>
+</body>
+</html>

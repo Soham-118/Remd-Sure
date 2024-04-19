@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antacids</title>
+    <link rel="stylesheet" href="substyle.css">
+
+    <style>
+      /* Warning */
+      .warning {
+            background-color: #f44336;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+        body{
+            background-image: url("other_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+        }
+        /* Dark mode overlay */
+        body.dark-mode::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="info-box">
+            <h1>Antacids - Which one should you buy?</h1>
+        </div>
+       
+        <div class="description">
+            <h2><p>Basic Information about Antacids</p></h2>
+            <p>
+                <ul>
+                    <li>Antacids are a medicine that relieves heartburn and indigestion by reducing the amount of acid in your stomach.</li> 
+                    <li>Antacids neutralize the acid in your stomach by stopping an enzyme that creates acid to break down food for digestion (pepsin).</li>
+                </ul>
+            </p>
+        </div>
+        
+        <ol class="medicines">
+            <li class="medicine">
+                <h2>Tums(oral)</h2>
+                <img src="tums.jpg" alt="tums" height="200" width="200">
+
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>This medication is used to treat symptoms caused by too much stomach 
+                            acid such as heartburn, upset stomach, or indigestion. 
+                            It is an antacid that works by lowering the amount of acid in the stomach.
+                            Check the ingredients on the label even if you have used the product before. 
+                            The manufacturer may have changed the ingredients. 
+                            Also, products with similar names may contain different ingredients 
+                            meant for different purposes. Taking the wrong product could harm you.</p>
+                            
+                        <li><strong>Uses of Azithromycin</strong></li>
+                        <p>
+                            <ul>
+                                <li>TUMS is an antacid used to relieve heartburn, sour stomach, acid indigestion, and upset stomach associated with these symptoms. </li>
+                                <li>TUMS starts to neutralize the heartburn-causing acid in your esophagus and stomach on contact, which provides fast relief.</li>
+                            </ul>
+                        <ul>
+                            <li>Common side effects of Tums(oral)</li>
+                            <li>Constipation, gas, and burping may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly.</li>
+                            <li>A very serious allergic reaction to this drug is rare.</li>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+
+            <li class="medicine">
+                <h2>Rolaids</h2>
+                <img src="rolaids.jpg" alt="rolaids" height="200" width="200">
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p></p>
+                        <li><strong>Uses of Rolaids</strong></li>
+                        <p>
+                            <ul>
+                                <li>This combination medication is used to treat symptoms caused by too much stomach acid such as heartburn, upset stomach, or indigestion. </li>
+                                <li> It is also used to treat symptoms of extra gas such as bloating and feelings of pressure/discomfort in the stomach/gut. </li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Rolaids</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Amoxicillin</li>
+                            <ol>
+                                <li>Constipation may occur.</li>
+                                <li>A very serious allergic reaction to this drug is rare.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+        </ol>
+    </section>
+
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+    <div class="warning">We are not responsible for any untoward side effects by consuming unprescribed medicine. Please consult your doctor before.</div>
+</body>
+</html>

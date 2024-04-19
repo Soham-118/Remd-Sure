@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antihistamines</title>
+    <link rel="stylesheet" href="substyle.css">
+
+    <style>
+      /* Warning */
+      .warning {
+            background-color: #f44336;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+        body{
+            background-image: url("other_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+        }
+        /* Dark mode overlay */
+        body.dark-mode::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+      <div class="info-box">
+            <h1>Antihistamines- Which one should you buy?</h1>
+        </div>
+       
+        <div class="description">
+          <h2><p>Basic Information about Antihistamines</p></h2>
+            <ul>
+                <li>This combination medication is used to temporarily relieve symptoms caused by the common cold, flu, allergies, or other breathing illnesses (such as sinusitis, bronchitis).</li>
+                <li> Antihistamines help relieve watery eyes, itchy eyes/nose/throat, runny nose, and sneezing. </li>
+                <li>Decongestants help to relieve stuffy nose and ear congestion symptoms.</li>
+                <li>If you are self-treating with this medication, carefully read the package instructions to be sure it is right for you before you start using this product.</li>
+                </ul>
+        </div>
+
+        <ol class="medicines">
+            <li class="medicine">
+                <h2>Cetrizine</h2>
+                <img src="cetrizine.jpg" alt="cetrizine" height="200" width="200">
+
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>If you are taking the over-the-counter product to self-treat, read all directions on the product package before taking this medication. If you have any questions, consult your pharmacist. If your doctor has prescribed this medication, take it as directed, usually once daily.</p>
+                        <li><strong>Uses of Cetrizine</strong></li>
+                        <p>
+                            <ul>
+                                <li>Cetirizine is an antihistamine used to relieve allergy symptoms such as watery eyes, runny nose, itching eyes/nose, sneezing, hives, and itching.</li>
+                                <li> It works by blocking a certain natural substance (histamine) that your body makes during an allergic reaction.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Cetrizine</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Temazipam(oral)</li>
+                            <ol>
+                                <li>Drowsiness, tiredness, and dry mouth may occur. </li>
+                                <liStomach pain may also occur, especially in children. If any of these effects last or get worse, tell your doctor or pharmacist promptly.</li>
+                                <lirash, itching/swelling (especially of the face/tongue/throat), severe dizziness, trouble breathing.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+
+            <li class="medicine">
+                <h2>Benadryl</h2>
+                <img src="benadryl.jpg" alt="benadryl" height="200" width="200">
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>Benadryl is an antihistamine that reduces the effects of natural chemical histamine in the body. Histamine can produce symptoms of sneezing, itching, watery eyes, and runny nose.</p>
+                        <li><strong>Uses of Benadryl</strong></li>
+                        <p>
+                            <ul>
+                                <li>Benadryl is used to treat sneezing, runny nose, watery eyes, hives, skin rash, itching, and other cold or allergy symptoms.</li>
+                                <li>Benadryl is also used to treat motion sickness, to induce sleep, and to treat certain symptoms of Parkinson's disease.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Benadryl</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Benadryl</li>
+                            <ol>
+                                <li>pounding heartbeats or fluttering in your chest</li>
+                                <li>drowsiness</li>
+                                <li>tightness in your neck or jaw, uncontrollable movements of your tongue.</li>
+                                <li>mental/mood changes</li>
+                                <li>agitation, confusion, seeing/hearing things that are not there, rare thoughts of suicide,unusual behavior.</li>
+                                <li>rash, itching/swelling (especially of the face/tongue/throat), severe dizziness, trouble breathing.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+        </ol>
+    </section>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+    <div class="warning">We are not responsible for any untoward side effects by consuming unprescribed medicine. Please consult your doctor before.</div>
+</body>
+</html>

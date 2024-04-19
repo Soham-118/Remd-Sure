@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraceptives</title>
+    <link rel="stylesheet" href="substyle.css">
+
+    <style>
+      /* Warning */
+      .warning {
+            background-color: #f44336;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+        }
+        body{
+            background-image: url("other_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+        }
+        /* Dark mode overlay */
+        body.dark-mode::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+      <div class="info-box">
+            <h1>Contraceptives - Which one should you buy?</h1>
+        </div>
+       
+        <div class="description">
+            <h2><p>Basic Information about contraceptives</p></h2>
+            <p>
+            <ul>
+            <li>Birth control pills are a type of contraception thats 99% effective at 
+                preventing pregnancy when taken consistently every day.</li>
+                <li>The pill contains hormones that regulate menstruation, decrease PMS symptoms, 
+                lower the risk of ovarian and uterine cancers, improve acne and treat endometriosis.</li>
+                </ul>
+                </p>
+               
+        </div>
+
+        <ol class="medicines">
+            <li class="medicine">
+                <h2>Ethinylestradiol</h2>
+                <img src="eth.jpg" alt="Ethinylestradiol" height="200" width="200">
+
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>Ethinyl estradiol tablets contain synthetic (lab-made) versions of estrogen 
+                            and progesterone. They prevent pregnancy by stopping ovulation. 
+                            They also treat acne and premenstrual dysphoric disorder (PMDD). 
+                            Common brands include Gianvi, Jasmiel, Yasmin and Yaz.</p>
+                        <li><strong>Uses of Ethinylestradiol</strong></li>
+                        <p>
+                            <ul>
+                                <li>Ethinyl estradiol prevents ovulation and pregnancy. It may also be used to treat acne and premenstrual dysphoric disorder (PMDD).</li>
+                                <li>Common side effects of ethinyl estradiol</li>
+                                <li>Allergic reactions—skin rash, itching, hives, swelling of the face, lips, tongue, or throat</li>
+                                <li>Blood clot—pain, swelling, or warmth in the leg, shortness of breath, chest pain</li>
+                             </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+
+            <li class="medicine">
+                <h2>Norethidrone</h2>
+                <img src="norethindrone.jpg" alt="norethindrone" height="200" width="200">
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>Read the Patient Information Leaflet provided by your pharmacist before you start using this product and each time you get a refill. The leaflet contains very important information on when to take your pills and what to do if you miss a dose. If you have any questions, ask your doctor or pharmacist.</p>
+                        <li><strong>Uses of Norethidrone</strong></li>
+                        <p>
+                            <ul>
+                                <li>This medication is used to prevent pregnancy. It is often referred to as the "mini-pill" because it does not contain any estrogen. Norethindrone (a form of progestin) is a hormone that prevents pregnancy.</li>
+                                <li>To reduce the risk of pregnancy, it is very important to take this medication exactly as prescribed.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Norethidrone</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Norethidrone</li>
+                            <ol>
+                                <li>Nausea, vomiting, headache, bloating, breast tenderness, or weight gain may occur. </li>
+                                <li> Vaginal bleeding between periods (spotting) or missed/irregular periods may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly. If you miss 2 periods in a row (or 1 period if the pill has not been used properly), contact your doctor for a pregnancy test.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+        </ol>
+    </section>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+    <div class="warning">We are not responsible for any untoward side effects by consuming unprescribed medicine. Please consult your doctor before.</div>
+</body>
+</html>

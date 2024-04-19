@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Pills</title>
+    <link rel="stylesheet" href="substyle.css">
+
+    <style>
+      /* Warning */
+      .warning {
+            background-color: #f44336;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 999; 
+        }
+        body{
+            background-image: url("other_background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+        }
+        /* Dark mode overlay */
+        body.dark-mode::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65); 
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+      <div class="info-box">
+            <h1>Sleeping Pills - Which one should you buy?</h1>
+        </div>
+       
+        <div class="description">
+          <h2><p>Basic Information about sleeping pills</p></h2>
+            <ul>
+                <li>Sleeping pills treat insomnia by making you feel drowsy and relaxed.</li>
+                <li> Sleep aids, including natural ones like melatonin, can cause side effects.</li>
+                <li>You may feel confused or sleepy during the day. </li>
+                <li>Some people walk or eat in their sleep (parasomnia).</li>
+                <li>Other nondrug therapies like cognitive behavioral therapy (CBT) are better at improving sleep.</li>
+            </ul>
+        </div>
+
+        <ol class="medicines">
+            <li class="medicine">
+                <h2>Temazipam(oral)</h2>
+                <img src="temazepam.jfif" alt="Temazepam" height="200" width="200">
+
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>This medication is used to treat a certain sleep problem (insomnia). It may help you fall asleep faster, stay asleep longer, and lessen how often you wake up during the night, so you can get a better night's rest. Temazepam belongs to a class of drugs called benzodiazepines. It acts on your brain to produce a calming effect.Use of this medication is usually limited to short treatment periods of 1 to 2 weeks or less. If your insomnia continues for a longer time, talk to your doctor to see if you need other treatment.</p>
+                        <li><strong>Uses of Temazipam(oral)</strong></li>
+                        <p>
+                            <ul>
+                                <li>This medication is used to treat a certain sleep problem (insomnia).</li>
+                                <li> It acts on your brain to produce a calming effect.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Temazipam(oral)</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Temazipam(oral)</li>
+                            <ol>
+                                <li>Dizziness or difficulty with coordination </li>
+                                <li>memory loss</li>
+                                <li>mental/mood/behavior changes</li>
+                                <li>new/worsening depression, abnormal thoughts, thoughts of suicide, hallucinations, confusion, agitation, aggressive behavior, anxiety</li>
+                                <li> rash, itching/swelling (especially of the face/tongue/throat), severe dizziness, trouble breathing.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+
+            <li class="medicine">
+                <h2>Zaleplon</h2>
+                <img src="zaleplon.jfif" alt="Zaleplon" height="200" width="200">
+                <div class="info">
+                    <ul>
+                        <li><strong>Product Information and Benefits</strong></li>
+                        <p>This medication is used for a short time to treat people who have trouble falling asleep. If you have other sleep problems such as not being able to sleep through the night, this medication may not be right for you. Zaleplon is known as a hypnotic. It works on certain centers in the brain to relax you and help you fall asleep faster.</p>
+                        <li><strong>Uses of Zaleplon</strong></li>
+                        <p>
+                            <ul>
+                                <li>To treat people who have trouble falling asleep</li>
+                                <li>It works on certain centers in the brain to relax you and help you fall asleep faster.</li>
+                            </ul>
+                        </p>
+                        <li><strong>Side Effects of Zaleplon</strong></li>
+                        <p>Remember that this medication has been prescribed because your doctor has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.</p>
+                        <ul>
+                            <li>Common side effects of Zaleplon</li>
+                            <ol>
+                                <li>Dizziness</li>
+                                <li>drowsiness</li>
+                                <li>short-term memory loss, or lack of coordination</li>
+                                <li>mental/mood changes</li>
+                                <li>agitation, confusion, seeing/hearing things that are not there, rare thoughts of suicide,unusual behavior.</li>
+                                <li>rash, itching/swelling (especially of the face/tongue/throat), severe dizziness, trouble breathing.</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                </div>
+                <br>
+                <a href="www.google.com" class="c">Buy Here</a>
+            </li>
+        </ol>
+    </section>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+    <div class="warning">We are not responsible for any untoward side effects by consuming unprescribed medicine. Please consult your doctor before.</div>
+</body>
+</html>
